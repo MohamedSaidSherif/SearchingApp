@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SearchingApp</string>
+    <string name="search_using_search_dialog">Search using search dialog</string>
+    <string name="search">Search</string>
+</resources>
