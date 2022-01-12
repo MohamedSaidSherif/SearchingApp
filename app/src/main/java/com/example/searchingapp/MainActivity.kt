@@ -53,4 +53,18 @@ class MainActivity : AppCompatActivity() {
 
         return true
     }
+
+    private val searchQueryTextListener: SearchView.OnQueryTextListener = object:
+        SearchView.OnQueryTextListener {
+        override fun onQueryTextSubmit(query: String?): Boolean {
+            Log.d(TAG, "onQueryTextSubmit-> query: $query")
+            return false
+        }
+
+        override fun onQueryTextChange(newText: String?): Boolean {
+            Log.d(TAG, "onQueryTextChange-> newText: $newText")
+            return true
+        }
+
+    }
 }
